@@ -6,7 +6,7 @@
 
 ## Contents
 - Raspberry Pi OS: [Installation using Imager](https://1sfu-my.sharepoint.com/:v:/g/personal/mnariman_sfu_ca/EctjCUgi0TNBnjfljyBOzlIBlQFRnIUxZRQWd5di8wQJpQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=wlEJSO)
-- Raspberry Pi Setup: [Wifi-hotspot](https://1sfu-my.sharepoint.com/:v:/g/personal/mnariman_sfu_ca/EccLVhWViydDhhG79_DzDbABVFBxmYvfc9yftiOyixhzLA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=loOedG), [VNC enable and Static-Ip](https://1sfu-my.sharepoint.com/:v:/g/personal/mnariman_sfu_ca/EZPJnzONWt9LqaXLaZDaa1wBlOpVCJkyhosY96-a2qNp6w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=zSfzpP)
+- Raspberry Pi Setup: [Wifi-hotspot](https://1sfu-my.sharepoint.com/:v:/g/personal/mnariman_sfu_ca/ETjXQJLWK7ZFph6CpkjX0O8Bb6LBijeFyOjoxx6raX7Wqg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=mjI107),
 - Remote Desktop Connection: [ssh using VNC and Smartty](https://1sfu-my.sharepoint.com/:v:/g/personal/mnariman_sfu_ca/EWjp16yWOzBJtykEqafDoiUBe8ml6vaUaFsHeEQw683xIg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=44aw7J), [ssh using VScode](https://1sfu-my.sharepoint.com/:v:/g/personal/mnariman_sfu_ca/EVNvlAtQ2h1Ktzt_zGm9MGcBjrVhZLAdORSbY-kf6bj68w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vUw4w4)
 - File Transfer: [Watch tutorial](https://1sfu-my.sharepoint.com/:v:/g/personal/mnariman_sfu_ca/ESfGQ3MnePpKiL16B70OFYQB8BDpufgs5jwaqA16z_fqng?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=0EZOhR)
 - Basic Linux Commands
@@ -35,13 +35,13 @@ After setting up the OS, please follow these instructions on memory swapping:
 Clone the public repository (excludes solutions for Projects):
 
 ```bash
-cd /home/pi && git clone https://github.com/hmarthens1/mse112-ws-student.git
+cd /home/pi && git clone https://github.com/hmarthens1/RPi5-ws.git
 ```
 
 Navigate to the cloned repository:
 
 ```bash
-cd ~/mse112-ws-student
+cd ~/RPi5-ws
 ```
 
 Follow the package installation procedures below:
@@ -55,19 +55,6 @@ Install the following packages:
 1. **PyYAML** (YAML handler)
    ```bash
    sudo pip install pyyaml
-   ```
-2. **rpi_ws281x** (for RGB modules)
-   ```bash
-   sudo pip install rpi_ws281x
-   ```
-3. **RPi.GPIO** (for GPIO)
-   ```bash
-   sudo pip install RPi.GPIO
-   ```
-4. **smbus2** (for I2C communication using Python)
-   ```bash
-   sudo pip install smbus2
-   ```
 
 ---
 
@@ -78,23 +65,24 @@ After installing the required packages, test an example:
 Navigate to the directory:
 
 ```bash
-cd ~/workspacename/MasterPi/HiwonderSDK
+cd /home/pi/RPi5-ws/MasterPi/board_demo
+
 ```
 
-Run the example for RGB light:
+Run the example for Servo control:
 
 ```bash
-sudo python RGBControlDemo.py
+sudo python control_by_servo.py
 ```
 
-If the RGB lights flash, the setup is successful.
+If the servos move, the setup is successful.
 
 ---
-
+<!--
 ### Before OpenCV Installation: Follow Instructions for Gstreamer
 
 - **Gstreamer Setup:** [View Instructions](https://1sfu-my.sharepoint.com/:w:/g/personal/mnariman_sfu_ca/EX1mgtM3SRdLh1aE_tTZubQBF2nU7zVNEx3l3PxnkfOUQA?e=8RW3Nw)
-
+-->
 ## Overclocking
 
 - **Video Demo:** [Watch Demo](https://1sfu-my.sharepoint.com/:v:/g/personal/mnariman_sfu_ca/EXVSrKCz_8lFioCxkZRBGs8BvZU0JVhMVvBFuD1F56JryQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=C65Pw5)
