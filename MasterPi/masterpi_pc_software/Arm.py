@@ -36,7 +36,7 @@ class MainWindow(QtWidgets.QWidget, Ui_Form):
         self.tableWidget.setSelectionBehavior(QAbstractItemView.SelectRows)  # 设置选中整行，若不设置默认选中单元格
         self.message = QMessageBox()
         self.resetServos_ = False
-        self.path = '/home/pi/MasterPi/'
+        self.path = '/home/pi/RPi5-ws/MasterPi/'
         self.actdir = self.path + "action_groups/"
         self.button_controlaction_clicked('reflash')
         ########################主界面###############################
