@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 # encoding: utf-8
 import os
+if "XDG_RUNTIME_DIR" not in os.environ:
+    os.environ["XDG_RUNTIME_DIR"] = f"/run/user/{os.getuid()}"
+    os.makedirs(os.environ["XDG_RUNTIME_DIR"], mode=0o700, exist_ok=True)
 import re
 import cv2
 import sys
